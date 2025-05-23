@@ -11,7 +11,7 @@ sys.path.insert(0, dir2add)
 from doc_builder.docs_version import DocsVersion  # pylint: disable=import-error,no-name-in-module
 
 # Branch name, tag, or commit SHA whose version of certain files we want to preserve
-LATEST_REF = "master"
+LATEST_REF = "main"
 
 # List of version definitions
 VERSION_LIST = [
