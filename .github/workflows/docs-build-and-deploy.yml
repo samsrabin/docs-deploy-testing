@@ -52,11 +52,6 @@ jobs:
           bin/git-fleximod update -o
           cd doc
           ./build_docs_to_publish -d --container-cli-tool docker --site-root https://samsrabin.github.io/docs-deploy-testing
-          cd _publish
-          link_dir=versions/master/html/users_guide/working-with-documentation
-          mkdir -p ${link_dir}
-          cd ${link_dir}
-          cp -a ../../../../../users_guide/working-with-documentation/docs-intro-and-recommended.html .
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
