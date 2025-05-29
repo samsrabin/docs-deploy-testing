@@ -51,7 +51,7 @@ jobs:
         run: |
           bin/git-fleximod update -o
           cd doc
-          ./build_docs_to_publish -d --site-root https://escomp.github.io/CTSM
+          ./build_docs_to_publish -d --site-root https://samsrabin.github.io/docs-deploy-testing
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
